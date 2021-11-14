@@ -10,7 +10,7 @@ const TopBanner = () => {
     const history = useHistory();
 
     const handleAboutUs = () => {
-        history.push('/about-us');
+        history.push('/all-products');
     }
 
     return (
@@ -23,7 +23,7 @@ const TopBanner = () => {
                     Make yourself stronger. There Is difficult Way <br />
                     in front of you.
                 </p>
-                <Button onClick={handleAboutUs} className="about-btn">About Us</Button>
+                <Button onClick={handleAboutUs} className="about-btn">Explore All</Button>
             </div>
             <div className="feature-img">
                 <img src={img} alt="" />
