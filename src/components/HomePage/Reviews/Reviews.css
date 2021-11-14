@@ -1,0 +1,25 @@
+/* .banner-bg {
+    background-image: url('../../../images/review-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+  } */
+  
+  .review-card {
+    background-color: darkgray;
+    border-radius: 10px;
+    width: 18rem;
+    min-height: 17rem;
+    height: auto;
+  }
+  .fa-star{
+      color: rgb(238, 93, 36);
+  }
+  .slick-prev {
+    left: 3% !important;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+  }

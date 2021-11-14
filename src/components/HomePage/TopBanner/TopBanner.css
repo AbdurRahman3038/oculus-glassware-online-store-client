@@ -1,0 +1,34 @@
+.feature-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A0D1B;
+    padding-bottom: 14px;
+}
+.feature-description{
+
+    padding: 60px;
+
+}
+.feature-text{
+    font-size: 60px;
+    color: white;
+    
+}
+.text-desc{
+    font-size: large;
+    font-weight: 600;
+    color: white;
+}
+.about-btn{
+    background-color: #0A0D1B;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.feature-img{
+    background-color: #0A0D1B;
+    padding: 40px 0px;
+}
