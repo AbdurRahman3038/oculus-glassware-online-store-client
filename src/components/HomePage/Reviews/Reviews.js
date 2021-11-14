@@ -58,7 +58,7 @@ const Reviews = () => {
                     return (
                         <div key={data._id} className="d-flex justify-content-center col">
                             <div className="card review-card">
-                                <div className="card-body">
+                                <div className="review-card-body">
                                     <p>{data.name}</p>
                                     <p>{data.rating}</p>
                                     <div>

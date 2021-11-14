@@ -9,6 +9,7 @@ import Login from './components/LoginRegistration/Login/Login';
 import PrivateRoute from './components/LoginRegistration/PrivateRoute/PrivateRoute';
 import Registration from './components/LoginRegistration/Registration/Registration';
 import AllProducts from './components/ProductPage/AllProducts/AllProducts';
+import Order from './components/ProductPage/Order/Order';
 import AuthProvider from './context/AuthProvider';
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
 
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
+            </PrivateRoute>
+
+            <PrivateRoute path="/order/:packageId">
+              <Order></Order>
             </PrivateRoute>
 
             <Route path="/login">

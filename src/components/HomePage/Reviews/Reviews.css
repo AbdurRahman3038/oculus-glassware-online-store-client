@@ -4,9 +4,13 @@
     background-size: cover;
     height: auto;
   } */
-  
+  .review-card-body{
+    padding: 5px 15px;
+    color: rgb(0, 0, 0);
+    margin: 17px 0px;
+}
   .review-card {
-    background-color: darkgray;
+    background-color: rgb(233, 235, 232);
     border-radius: 10px;
     width: 18rem;
     min-height: 17rem;

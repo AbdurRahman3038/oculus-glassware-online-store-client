@@ -15,20 +15,20 @@ const TopBanner = () => {
 
     return (
         <div className="feature-container">
-        <div className="feature-description">
-            <h1 className="feature-text">
-                Prepare Yourself.
-            </h1>
-            <p className="text-desc">
-                Make yourself stronger. There Is difficult Way <br />
-                in front of you.
-            </p>
-            <Button onClick={handleAboutUs} className="about-btn">About Us</Button>
+            <div className="feature-description">
+                <h1 className="feature-text">
+                    Prepare Yourself.
+                </h1>
+                <p className="text-desc">
+                    Make yourself stronger. There Is difficult Way <br />
+                    in front of you.
+                </p>
+                <Button onClick={handleAboutUs} className="about-btn">About Us</Button>
+            </div>
+            <div className="feature-img">
+                <img src={img} alt="" />
+            </div>
         </div>
-        <div className="feature-img">
-            <img src={img} alt="" />
-        </div>
-    </div>
     );
 };
 
