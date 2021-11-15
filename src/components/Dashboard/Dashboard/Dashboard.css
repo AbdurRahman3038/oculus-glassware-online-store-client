@@ -3,9 +3,6 @@
     flex-direction: row;
 }
 
-.nav-item{
-    
-}
 @media only screen and (max-width:688px){
     .dashboard-container{
         display: flex;

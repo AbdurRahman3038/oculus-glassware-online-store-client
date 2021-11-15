@@ -70,3 +70,12 @@
     background-color: #f1f1f1;
     text-align: center;
   }
+
+  @media only screen and (max-width:688px){
+    .review-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+      justify-content: center;
+}
+  }
