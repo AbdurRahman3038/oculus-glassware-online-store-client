@@ -6,7 +6,7 @@ const ManageOrders = () => {
     const [manageBookings, setManageBookings] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://floating-peak-58852.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setManageBookings(data));
 
@@ -19,7 +19,7 @@ const ManageOrders = () => {
             status: orderStatus
         }
 
-        fetch(`http://localhost:5000/orders/update/${id}`, {
+        fetch(`https://floating-peak-58852.herokuapp.com/orders/update/${id}`, {
             method: 'PATCH',
             headers: { 'content-Type': 'application/json' },
             body: JSON.stringify(orderData)
@@ -36,7 +36,7 @@ const ManageOrders = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure, you want to delete this?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://floating-peak-58852.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

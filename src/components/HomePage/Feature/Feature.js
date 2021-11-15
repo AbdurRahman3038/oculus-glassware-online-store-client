@@ -8,7 +8,7 @@ import img3 from '../../../images/img3.jpg';
 
 const Feature = () => {
     return (
-        <>
+        <div className="carousel-container">
             <Carousel>
                 <Carousel.Item>
                     <img
@@ -17,8 +17,8 @@ const Feature = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Explore France</h3>
-                        <p>Paris is historic place, observe the revolution infront of your eyes</p>
+                        <h3 className="carsousel-text">Your Eye Matters</h3>
+                        <p className="carsousel-text">You must protect your eyes from harmful activities and chemicals</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -29,8 +29,8 @@ const Feature = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Cox's Bazar Sea</h3>
-                        <p>Explore the Worlds Biggest Sea Beach in the WORLD the way you want</p>
+                        <h3 className="carsousel-text">Do Your Fashion</h3>
+                        <p className="carsousel-text">Explore the Fashion World with the glass. Its all about how you look!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -41,12 +41,12 @@ const Feature = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Khans Tea Resort</h3>
-                        <p>Releax in your free time in the resort with your family to sepnd vacation </p>
+                        <h3 className="carsousel-text">Reshape Your Personality</h3>
+                        <p className="carsousel-text">Your glass defines your personality and it defines your choice and test! </p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-        </>
+        </div>
     );
 };
 

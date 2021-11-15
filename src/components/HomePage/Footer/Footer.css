@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    background-color: #1b2b46;
+    background-color: #000000;
     padding: 40px;
     margin-top: 20px;
     color: white;
@@ -21,7 +21,7 @@
 }
 
 .subscribe-btn{
-    background-color: #1b2b46;
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     cursor: pointer;
@@ -35,7 +35,7 @@
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
-        background-color: #1b2b46;
+        background-color: #000000;
         padding: 40px;
         margin-top: 20px;
         color: white;
@@ -51,7 +51,7 @@
     }
     
     .subscribe-btn{
-        background-color: #1b2b46;
+        background-color: #000000;
         color: white;
         padding: 5px 20px;
         cursor: pointer;

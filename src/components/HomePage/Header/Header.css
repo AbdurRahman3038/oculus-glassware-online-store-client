@@ -9,13 +9,14 @@
     width: 200px;
     margin-left: 80px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .navbar-container{
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
+    margin-right: 80px;
     justify-content: space-evenly;
+    align-items: center;
     
 }
 .nav{
@@ -41,18 +42,18 @@
     
 }
 .login{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-right: 20px;
+    border: 2px solid rgb(158, 8, 8);
+    border-radius: 30px;
+}
+.login:hover{
     color: white;
-    padding: 20px 0px;
+    background-color: rgb(158, 8, 8);
     text-decoration: none;
     padding-right: 20px;
 }
-/* .login:hover{
-    color: white;
-    padding: 20px 0px;
-    background-color: rgb(117, 117, 106);
-    text-decoration: none;
-    padding-right: 20px;
-} */
 
 @media only screen and (max-width:688px){
 
@@ -61,13 +62,15 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background-color: #1b2b46;
+        background-color: #ffffff;
+        
     }
 
     .header-img{
         width: 280px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-left: 5px;
         
     }
 
@@ -77,6 +80,12 @@
         margin-right: 20px;
         justify-content: space-evenly;
         
+    }
+    .nav{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 8px 12px;
+        font-weight: 600;
     }
 
     .name{
@@ -90,7 +99,9 @@
         margin: 10px 0px;
     }
     .login{
-        padding: 12px 12px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 12px 23px;
         margin: 10px 0px;
     }
 

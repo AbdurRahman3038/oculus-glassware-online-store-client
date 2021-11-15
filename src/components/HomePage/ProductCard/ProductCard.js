@@ -9,15 +9,16 @@ const ProductCard = (props) => {
 
     return (
         <div>
-            <Card>
-                <Card.Img variant="top" className="card-img" src={imgUrl} />
+            <Card className="single-card">
+                <Card.Img variant="top" className="package-img-style" src={imgUrl} />
+
                 <Card.Body className="top-card-body">
-                    <Card.Title>{name}</Card.Title>
-                    <Card.Text className="card-text">{description}</Card.Text>
+                    <Card.Title className="text-center">{name}</Card.Title>
+                    <Card.Text className="text-center">{description}</Card.Text>
                     <Card.Text className="card-text-style">Price: $ {price}</Card.Text>
                 </Card.Body>
 
-                <Card.Footer className="top-card-footer">
+                <Card.Footer className="card-footer">
                 <Link to={`/order/${_id}`}><button className="buy-btn">Buy Now <i className="far fa-calendar-check"></i></button></Link>
                 </Card.Footer>
             </Card>

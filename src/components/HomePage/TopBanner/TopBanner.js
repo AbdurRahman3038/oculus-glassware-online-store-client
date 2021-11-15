@@ -17,16 +17,16 @@ const TopBanner = () => {
         <div className="feature-container">
             <div className="feature-description">
                 <h1 className="feature-text">
-                    Prepare Yourself.
+                    Protect Your Eye.
                 </h1>
                 <p className="text-desc">
-                    Make yourself stronger. There Is difficult Way <br />
-                    in front of you.
+                    Make your eye safe. Your eyes define how do<br />
+                    you feel and how is your day!
                 </p>
-                <Button onClick={handleAboutUs} className="about-btn">Explore All</Button>
+                <Button onClick={handleAboutUs} className="explore-btn">Explore All</Button>
             </div>
             <div className="feature-img">
-                <img src={img} alt="" />
+                <img className="feature-image" src={img} alt="" />
             </div>
         </div>
     );

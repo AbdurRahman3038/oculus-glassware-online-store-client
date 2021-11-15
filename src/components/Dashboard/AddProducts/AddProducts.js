@@ -18,7 +18,7 @@ const AddProducts = () => {
     const handleAddProduct = (e) => {
         e.preventDefault();
 
-        axios.post('http://localhost:5000/products', data)
+        axios.post('https://floating-peak-58852.herokuapp.com/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('A new product added successfully');

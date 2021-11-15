@@ -22,7 +22,7 @@ const Header = () => {
                         <><Link to="/dashboard" className="nav">Dashboard</Link>
                             <Navbar className="name"> {user.displayName} </Navbar>
                             <button className="logout" onClick={logout}>Log Out</button></> :
-                        <Link to="/login" className="login">Login</Link>
+                        <Link to="/login" className="nav login">Login</Link>
                 }
 
             </div>

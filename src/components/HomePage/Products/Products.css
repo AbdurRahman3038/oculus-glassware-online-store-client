@@ -1,13 +1,45 @@
-.training-container{
+.card-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    padding: 40px 80px;
+    padding: 20px 50px;
+    margin: 0 100px;
 }
-.training-title{
+.top-sale{
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 0;
-    color: #E33C4E;
+    
+}
+.view-all-btn{
+    background-color: #ffffff;
+    padding: 6px 20px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.view-all-btn:hover{
+    background-color: #000000;
+    padding: 6px 20px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:688px){
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px 40px;
+        margin: 10px;
+    }
 }
 

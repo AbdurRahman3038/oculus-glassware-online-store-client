@@ -5,7 +5,7 @@ const ManageProducts = () => {
     const [managePackages, setManagePackages] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://floating-peak-58852.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setManagePackages(data));
 
@@ -17,7 +17,7 @@ const ManageProducts = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure, you want to delete this?');
         if (proceed) {
-            const url = `http://localhost:5000/products/${id}`;
+            const url = `https://floating-peak-58852.herokuapp.com/products/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

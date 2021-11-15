@@ -9,7 +9,7 @@ const MyOrder = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${user.email}`)
+        fetch(`https://floating-peak-58852.herokuapp.com/orders/${user.email}`)
             .then(res => res.json())
             .then(data => setMyBookings(data));
 
@@ -21,7 +21,7 @@ const MyOrder = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure, you want to cancel?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://floating-peak-58852.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

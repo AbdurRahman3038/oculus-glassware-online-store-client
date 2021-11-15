@@ -20,7 +20,7 @@ const AddReview = () => {
     const handleReview = (e) => {
         e.preventDefault();
 
-        axios.post('http://localhost:5000/reviews', data)
+        axios.post('https://floating-peak-58852.herokuapp.com/reviews', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('A new package added successfully');
@@ -32,7 +32,7 @@ const AddReview = () => {
 
     return (
         <div className="review-container">
-            <div class="container">
+            <div class="container-review">
                 <form id="ratings" onSubmit={handleReview}>
                     <h4 className="text-center">Please write your feedback and rate us!</h4>
                     <hr />

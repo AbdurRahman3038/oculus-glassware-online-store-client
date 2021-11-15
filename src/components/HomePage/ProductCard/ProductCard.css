@@ -1,100 +1,56 @@
-.card-img{
-    width: 300px;
-    height: 200px;
-}
-.top-card-body{
-    background-color: #0A0D1B;
-    color: rgb(247, 240, 240);
-   
-
-}
-.buy-btn{
-    background-color: #0A0D1B;
-    padding: 5px 30px;
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 25px;
-    cursor: pointer;
-}
-.top-card-footer{
-    background-color: #0A0D1B;
-    padding-left: 80px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-/* .card-body{
-    padding: 5px 15px;
-    background-color:  #85858a;
-    color: rgb(0, 0, 0);
-    margin: 17px 0px;
-} */
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    padding: 20px 30px;
-    margin: 0 165px;
+    .single-card:hover{
+        box-shadow: 1px 1px 10px rgb(95, 98, 117);
+    }
+    .book-appointment{
+        background-color: white;
+        color: #1b2b46;
+        padding: 7px 20px;
+        border: 2px solid #1b2b46;
+        border-radius: 25px;
+        font-size: 18px;
     
-}
-.top-training{
-    text-align: center;
-    font-size: 40px;
-    color: #E33C4E;
-}
-.view-all{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: #0A0D1B;
-    padding: 15px 35px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 30px;
-    cursor: pointer;
-}
-.explore{
-    text-align: center;
-    margin-top: 0px;
-}
-.all-course{
-    color: #E33C4E;
-    margin-top: 0;
-}
-
-.training-card-container{
-    padding: 20px;
-    border: 1px solid #0A0D1B;
-}
-.training-card-container:hover{
-    box-shadow: 2px 2px 8px 8px rgb(204, 197, 248);
-}
-.card-text{
-    text-align: center;
-}
-.card-title{
-    font-size: 22px;
-    font-weight: 630;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.card-body{
-    padding: 5px 15px;
-    background-color:  #ecebeb;
-    color: rgb(0, 0, 0);
-    margin: 17px 0px;
-}
-.card-text-style{
-    font-size: 15px;
-    text-align: center;
-    font-weight: 500;
-}
-.enroll-btn{
-    background-color: #E33C4E;
-    color: white;
-    padding: 10px 30px;
-    border: 2px solid white;   
-    cursor: pointer;
-}
-.card-footer{
-    display: flex;
-    column-gap: 68px;
-}
+    }
+    .book-appointment:hover{
+        background-color: #1b2b46;
+        color: white;
+        border: 2px solid #131e30;
+    }
+    .package-img-style{
+        height: 200px;
+    }
+    .card-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-text-style{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .buy-btn{
+        background-color: #ffffff;
+        padding: 6px 20px;
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .buy-btn:hover{
+        background-color: #000000;
+        padding: 6px 20px;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    @media only screen and (max-width:688px){
+        .card-footer-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }

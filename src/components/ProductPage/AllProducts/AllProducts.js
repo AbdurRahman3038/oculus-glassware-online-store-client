@@ -8,7 +8,7 @@ const AllProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://floating-peak-58852.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setAllProducts(data);
@@ -17,7 +17,7 @@ const AllProducts = () => {
 
     return (
         <div>
-            <h1 className="top-training">All Glasses </h1>
+
             <CardGroup className="card-container">
                 {
                     allProducts.map(product => <SingleProduct key={product._id}

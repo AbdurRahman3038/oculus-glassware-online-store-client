@@ -15,7 +15,7 @@ const Order = () => {
     console.log(packageId);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://floating-peak-58852.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
 
@@ -32,7 +32,7 @@ const Order = () => {
         const newData = { status: 'pending' };
         Object.assign(data, newData);
 
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://floating-peak-58852.herokuapp.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Your Booking is submitted successfully');

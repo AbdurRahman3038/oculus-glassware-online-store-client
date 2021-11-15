@@ -8,6 +8,7 @@ import Home from './components/HomePage/Home/Home';
 import Login from './components/LoginRegistration/Login/Login';
 import PrivateRoute from './components/LoginRegistration/PrivateRoute/PrivateRoute';
 import Registration from './components/LoginRegistration/Registration/Registration';
+import NotFound from './components/NotFound/NotFound';
 import AllProducts from './components/ProductPage/AllProducts/AllProducts';
 import Order from './components/ProductPage/Order/Order';
 import AuthProvider from './context/AuthProvider';
@@ -42,6 +43,10 @@ function App() {
 
             <Route path="/register">
               <Registration></Registration>
+            </Route>
+
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
 
           </Switch>

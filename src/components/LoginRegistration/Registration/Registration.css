@@ -65,3 +65,18 @@
     text-align: center;
     padding: 12px;
     }
+
+    @media only screen and (max-width:688px){
+
+      .main-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 10px 30px;
+    }
+    .register-img{
+      width: 300px;
+  }
+
+    }
